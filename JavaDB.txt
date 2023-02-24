@@ -4,5 +4,9 @@ insert into books(id,title,year, author) values(1,"Старик и море",195
 create table genres(id int PRIMARY KEY AUTO_INCREMENT, genre varchar(255) NOT NULL);
 alter table books add column genre_id NOT NULL FOREIGN KEY (genre_id) REFERENCES genre (id);
 insert into genre(id, genre) values(1, "Роман");
-
-
+___
+insert all
+into books(title,year,author) values("Предприниматель",1967,"Кувакин")
+into books(title,year,author) values("Профессор",1977,"Ломоносов")
+into books(title,year,author) values("Преподаватель",1977,"Головин")
+select * from dual;
