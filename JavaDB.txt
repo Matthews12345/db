@@ -10,3 +10,8 @@ into books(title,year,author) values("Предприниматель",1967,"Ку
 into books(title,year,author) values("Профессор",1977,"Ломоносов")
 into books(title,year,author) values("Преподаватель",1977,"Головин")
 select * from dual;
+
+insert into books(title,year,author)
+values 
+("Подопечный",1967,"Пешков"),
+("Полуночник",1947,"Рамазанов");
